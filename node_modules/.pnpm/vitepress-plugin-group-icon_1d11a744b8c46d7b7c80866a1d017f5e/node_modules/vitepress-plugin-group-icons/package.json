@@ -1,0 +1,81 @@
+{
+  "name": "vitepress-plugin-group-icons",
+  "type": "module",
+  "version": "1.7.1",
+  "author": "Leo <https://github.com/yuyinws>",
+  "license": "MIT",
+  "homepage": "https://github.com/yuyinws/vitepress-plugin-group-icons#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuyinws/vitepress-plugin-group-icons.git"
+  },
+  "bugs": "https://github.com/yuyinws/vitepress-plugin-group-icons/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "vite": ">=3"
+  },
+  "peerDependenciesMeta": {
+    "vite": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@iconify-json/logos": "^1.2.10",
+    "@iconify-json/vscode-icons": "^1.2.39",
+    "@iconify/utils": "^3.1.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^7.0.1",
+    "@antfu/ni": "^28.2.0",
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^22.19.7",
+    "bumpp": "^10.4.0",
+    "eslint": "^9.39.2",
+    "esno": "^4.8.0",
+    "lint-staged": "^16.2.7",
+    "simple-git-hooks": "^2.13.1",
+    "tsdown": "^0.19.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vitepress": "^1.6.4",
+    "vitest": "^4.0.17"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "lint": "eslint .",
+    "release": "bumpp",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  }
+}
