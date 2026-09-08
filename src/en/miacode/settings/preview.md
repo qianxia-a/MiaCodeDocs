@@ -1,4 +1,4 @@
-# Preview
+# Preview area
 
 You can adjust all preview settings in the preview area. Any setting can also be changed again when exporting the final chart.
 

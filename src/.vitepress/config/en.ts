@@ -9,18 +9,20 @@ export const en = defineConfig({
       { text: 'GitHub', link: 'https://github.com/fanfaredash/MiaCode' }
     ],
     sidebar: [
-      { text: 'Miacode', collapsed: false, items: [
-        { text: 'Overview', link: '/en/miacode/' },
-        { text: 'Using Miacode', collapsed: false, items: [
-          { text: 'Create a chart', link: '/en/miacode/usage/new' }, { text: 'Restore a backup', link: '/en/miacode/usage/recovery' },
-          { text: 'Edit a chart', link: '/en/miacode/usage/edit' }, { text: 'Timeline', link: '/en/miacode/usage/timeline' },
-          { text: 'Preview', link: '/en/miacode/usage/preview' }, { text: 'Audio and sync', link: '/en/miacode/usage/audio-sync' }
+      { text: 'Miacode', base: '/en/miacode', collapsed: false, items: [
+        { text: 'Overview', link: '/' },
+        { text: 'Using Miacode', base: '/en/miacode/usage', collapsed: true, items: [
+          { text: 'Create a chart', link: '/new' }, { text: 'Restore a backup', link: '/recovery' },
+          { text: 'Timeline', link: '/timeline' }, { text: 'Audio and sync', link: '/audio-sync' }
         ] },
-        { text: 'Export', collapsed: false, items: [
-          { text: 'Export', link: '/en/export/' }, { text: 'Video export', link: '/en/export/video' }, { text: 'ZIP archive', link: '/en/export/zip' }
+        { text: 'Export', base: '/en/miacode/export', collapsed: true, items: [
+          { text: 'Export', link: '/' }, { text: 'Video export', link: '/video' }, { text: 'ZIP archive', link: '/zip' }
+        ] },
+        { text: 'Settings', base: '/en/miacode/settings', collapsed: true, items: [
+          { text: 'Edit area', link: '/edit' }, { text: 'Preview area', link: '/preview' }
         ] }
       ] },
-      { text: 'About us', base: '/en/other', collapsed: false, items: [{ text: 'About us', link: '/about' }] }
+      { text: 'More', base: '/en/other', collapsed: true, items: [{ text: 'About us', link: '/about' }] }
     ],
     docFooter: { prev: 'Previous', next: 'Next' }, outline: { level: [2, 3], label: 'On this page' }, langMenuLabel: 'Languages'
   }
