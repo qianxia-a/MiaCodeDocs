@@ -1,0 +1,185 @@
+@import './style/font.css';
+@import './style/custom-block.css';
+@import './style/vp-code-group.css';
+@import './style/var.css';
+@import './style/main.css';
+
+
+.VPHomeHero .main .text,
+.VPHomeHero .main .name span {
+    --tw-gradient-from: #99d3fb;
+    --tw-gradient-via: #a1b8fc;
+    /* 中间颜色点 */
+    --tw-gradient-to: #ebc4fb;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to);
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* 兼容性 */
+    color: transparent;
+    /* 确保文本颜色透明 */
+}
+
+.VPButton.brand {
+    background-color: #f472b6 !important;
+}
+
+.VPLocalSearchBox #localsearch-list mark {
+    background-color: rgba(255, 138, 128, 0.3);
+}
+
+/* 首页 Hero 图像保持在内容区域内，不侵入顶部导航 */
+.VPHomeHero .image .image-src {
+    max-width: 360px;
+    max-height: 360px;
+    animation: hero-float 3.8s ease-in-out infinite;
+    will-change: transform;
+}
+
+.VPHomeHero {
+    padding-top: 56px !important;
+}
+
+.VPHomeHero .main {
+    transform: translateY(48px);
+}
+
+@media (min-width: 960px) {
+    .VPHomeHero .image {
+        transform: translateX(-220px);
+    }
+}
+
+@keyframes hero-float {
+    0%,
+    100% {
+        transform: translateY(-100px);
+    }
+
+    50% {
+        transform: translateY(-88px);
+    }
+}
+
+.mia-footer {
+    --mia-footer-bg: #f6f6f7;
+    --mia-footer-heading: rgba(20, 20, 24, 0.82);
+    --mia-footer-text: rgba(20, 20, 24, 0.58);
+    margin-top: 0;
+    padding: 56px 32px 48px;
+    background: var(--mia-footer-bg);
+    border-top: 1px solid rgba(20, 20, 24, 0.04);
+}
+
+.dark .mia-footer {
+    --mia-footer-bg: #151519;
+    --mia-footer-heading: rgba(255, 255, 255, 0.86);
+    --mia-footer-text: rgba(255, 255, 255, 0.62);
+    border-top-color: rgba(255, 255, 255, 0.04);
+}
+
+.mia-footer-inner {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 64px;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.mia-footer-group h2 {
+    margin: 0 0 20px;
+    color: var(--mia-footer-heading);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.mia-footer-group a {
+    color: var(--mia-footer-text);
+    font-size: 13px;
+    line-height: 1.6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.mia-footer-group a:hover {
+    color: var(--vp-c-brand-1);
+}
+
+.mia-footer-group a span {
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+@media (max-width: 640px) {
+    .VPHomeHero {
+        padding-top: 32px !important;
+    }
+
+    .VPHomeHero .main {
+        transform: translateY(24px);
+    }
+
+    .VPHomeHero .image {
+        transform: none;
+    }
+
+    .mia-footer {
+        padding: 40px 24px 36px;
+    }
+
+    .mia-footer-inner {
+        display: block;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .VPHomeHero .image .image-src {
+        animation: none;
+    }
+}
+/* .vitepress\theme\style\blur.css */
+:root {
+
+    /* 首页下滑后导航透明 */
+    .VPNavBar:not(.has-sidebar):not(.home.top) {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+    }
+
+    /* 搜索框透明 */
+    .DocSearch-Button {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+    }
+
+    /* Feature透明 */
+    .VPFeature {
+        border: none;
+        box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
+        background-color: transparent;
+    }
+
+    /* 文档页侧边栏顶部透明 */
+    .curtain {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+    }
+
+    @media (min-width: 960px) {
+
+        /* 文档页导航中间透明 */
+        .VPNavBar:not(.home.top) .content-body {
+            background-color: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(10px);
+        }
+    }
+
+    /* 移动端大纲栏透明 */
+    .VPLocalNav {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+    }
+
+}
