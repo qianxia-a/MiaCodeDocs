@@ -4,6 +4,16 @@ export const zh = defineConfig({
   lang: 'zh-CN',
   description: 'Miacode 使用文档与 simai 谱面创作参考',
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/qianxia-a/MiacodeDocs/edit/main/src/:path',
+      text: '在 GitHub 上编辑此页面'
+    },
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short'
+      }
+    },
     nav: [
       { text: 'Miacode', base: '/miacode', collapsed: true, items: [
         { text: '简介', link: '/' }
@@ -16,7 +26,8 @@ export const zh = defineConfig({
         { text: '简介', link: '/' },
         { text: '使用 Miacode', base: '/miacode/usage', collapsed: true, items: [
           { text: '新建谱面', link: '/new' }, { text: '恢复备份', link: '/recovery' },
-          { text: '时间轴', link: '/timeline' }, { text: '音频与同步', link: '/audio-sync' }
+          { text: '时间轴', link: '/timeline' }, { text: '音频与同步', link: '/audio-sync' },
+          { text: '工具', link: '/tools' }
         ] },
         { text: '导出', base: '/miacode/export', collapsed: true, items: [
           { text: '导出', link: '/' }, { text: '视频导出', link: '/video' }, { text: 'ZIP 打包', link: '/zip' }

@@ -4,6 +4,16 @@ export const en = defineConfig({
   lang: 'en-US',
   description: 'Miacode documentation and simai chart creation guide',
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/qianxia-a/MiacodeDocs/edit/main/src/:path',
+      text: 'Edit this page on GitHub'
+    },
+    lastUpdated: {
+      text: 'Last updated',
+      formatOptions: {
+        dateStyle: 'short'
+      }
+    },
     nav: [
       { text: 'Miacode', link: '/en/miacode/' }, { text: 'About us', link: '/en/other/about' },
       { text: 'GitHub', link: 'https://github.com/fanfaredash/MiaCode' }
