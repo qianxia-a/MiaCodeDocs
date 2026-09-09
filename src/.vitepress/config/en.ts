@@ -9,9 +9,10 @@ export const en = defineConfig({
       text: 'Edit this page on GitHub'
     },
     lastUpdated: {
-      text: 'Last updated',
+      text: 'Last edited on',
       formatOptions: {
-        dateStyle: 'short'
+        dateStyle: 'short',
+        timeStyle: 'medium'
       }
     },
     nav: [
@@ -24,9 +25,6 @@ export const en = defineConfig({
         { text: 'Using Miacode', base: '/en/miacode/usage', collapsed: true, items: [
           { text: 'Create a chart', link: '/new' }, { text: 'Restore a backup', link: '/recovery' },
           { text: 'Timeline', link: '/timeline' }, { text: 'Audio and sync', link: '/audio-sync' }
-        ] },
-        { text: 'Export', base: '/en/miacode/export', collapsed: true, items: [
-          { text: 'Export', link: '/' }, { text: 'Video export', link: '/video' }, { text: 'ZIP archive', link: '/zip' }
         ] },
         { text: 'Settings', base: '/en/miacode/settings', collapsed: true, items: [
           { text: 'Edit area', link: '/edit' }, { text: 'Preview area', link: '/preview' }

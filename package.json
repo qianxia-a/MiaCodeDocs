@@ -9,6 +9,7 @@
     "docs:preview": "vitepress preview src"
   },
   "devDependencies": {
+    "@nolebase/vitepress-plugin-git-changelog": "2.18.2",
     "@nolebase/vitepress-plugin-highlight-targeted-heading": "2.18.2",
     "vitepress": "1.6.4"
   }

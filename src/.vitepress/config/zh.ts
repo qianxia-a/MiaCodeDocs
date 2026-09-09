@@ -9,9 +9,10 @@ export const zh = defineConfig({
       text: '在 GitHub 上编辑此页面'
     },
     lastUpdated: {
-      text: '最后更新于',
+      text: '最后编辑于',
       formatOptions: {
-        dateStyle: 'short'
+        dateStyle: 'short',
+        timeStyle: 'medium'
       }
     },
     nav: [
@@ -26,11 +27,9 @@ export const zh = defineConfig({
         { text: '简介', link: '/' },
         { text: '使用 Miacode', base: '/miacode/usage', collapsed: true, items: [
           { text: '新建谱面', link: '/new' }, { text: '恢复备份', link: '/recovery' },
-          { text: '时间轴', link: '/timeline' }, { text: '音频与同步', link: '/audio-sync' },
-          { text: '工具', link: '/tools' }
-        ] },
-        { text: '导出', base: '/miacode/export', collapsed: true, items: [
-          { text: '导出', link: '/' }, { text: '视频导出', link: '/video' }, { text: 'ZIP 打包', link: '/zip' }
+          { text: '导出', link: '/export' }, { text: '时间轴', link: '/timeline' },
+          { text: '音频与同步', link: '/audio-sync' },
+          { text: '工具', link: '/tools' }, { text: 'touch 点击输入', link: '/touch-input' }
         ] },
         { text: '设置', base: '/miacode/settings', collapsed: true, items: [
           { text: '编辑区', link: '/edit' }, { text: '预览区', link: '/preview' }
