@@ -5,6 +5,8 @@ export const shared = defineConfig({
   title: 'Miacode',
   lastUpdated: true,
   cleanUrls: true,
+  // GitHub Pages 以项目子路径发布 (qianxia-a.github.io/MiacodeDocs/),仅 CI 构建时启用
+  base: process.env.GITHUB_ACTIONS ? '/MiacodeDocs/' : '/',
   vite: {
     ssr: {
       noExternal: ['@nolebase/*']
@@ -24,7 +26,7 @@ export const shared = defineConfig({
     ]
   },
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/images/miacode.png' }]
+    ['link', { rel: 'icon', type: 'image/png', href: (process.env.GITHUB_ACTIONS ? '/MiacodeDocs' : '') + '/images/miacode.png' }]
   ],
   themeConfig: {
     logo: '/images/miacode.png',
