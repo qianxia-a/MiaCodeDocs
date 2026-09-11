@@ -1,6 +1,6 @@
 # Edit area
 
-After creating a chart, you can use various tools to adjust and edit it. Common functions are available under **Edit** and **Adjust** in the top toolbar. The following describes Miacode-specific functions.
+After creating a chart, you can use various tools to adjust and edit it. Common functions are available under **Edit** and **Adjust** in the top toolbar. The following describes MiaCode-specific functions.
 
 ## Note subdivision adjustment
 

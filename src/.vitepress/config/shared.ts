@@ -2,7 +2,7 @@ import { GitChangelog, GitChangelogMarkdownSection } from '@nolebase/vitepress-p
 import { defineConfig } from 'vitepress'
 
 export const shared = defineConfig({
-  title: 'Miacode',
+  title: 'MiaCode',
   lastUpdated: true,
   cleanUrls: true,
   // GitHub Pages 以项目子路径发布 (qianxia-a.github.io/MiacodeDocs/),仅 CI 构建时启用

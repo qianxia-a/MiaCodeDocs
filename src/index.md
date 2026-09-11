@@ -1,11 +1,11 @@
 ---
 layout: home
 
-title: Miacode
+title: MiaCode
 titleTemplate: simai 谱面创作工具
 
 hero:
-  name: Miacode
+  name: MiaCode
   text: 专注于 simai 谱面创作的编辑器
   actions:
     - theme: brand
@@ -16,6 +16,6 @@ hero:
       link: https://github.com/fanfaredash/MiaCode
   image:
     src: /images/miacode.png
-    alt: Miacode 图标
+    alt: MiaCode 图标
 
 ---

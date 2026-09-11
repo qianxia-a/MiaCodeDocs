@@ -2,7 +2,7 @@
 
 You can adjust all preview settings in the preview area. Any setting can also be changed again when exporting the final chart.
 
-By default, Miacode uses full-screen preview. If a PV is imported but full-screen preview is disabled, the PV is cropped; this does not affect export results.
+By default, MiaCode uses full-screen preview. If a PV is imported but full-screen preview is disabled, the PV is cropped; this does not affect export results.
 
 The preview area can be resized freely by dragging its boundary.
 

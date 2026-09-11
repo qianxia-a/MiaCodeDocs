@@ -1,11 +1,11 @@
 ---
 layout: home
 
-title: Miacode
+title: MiaCode
 titleTemplate: simai chart creation tool
 
 hero:
-  name: Miacode
+  name: MiaCode
   text: An editor for creating simai charts
   actions:
     - theme: brand
@@ -16,6 +16,6 @@ hero:
       link: https://github.com/fanfaredash/MiaCode
   image:
     src: /images/miacode.png
-    alt: Miacode icon
+    alt: MiaCode icon
 
 ---
