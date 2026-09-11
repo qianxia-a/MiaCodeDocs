@@ -6,7 +6,7 @@ titleTemplate: simai chart creation tool
 
 hero:
   name: MiaCode
-  text: An editor for creating simai charts
+  text: An open-source, cross-platform, versatile maimai chart creation tool
   actions:
     - theme: brand
       text: Get started

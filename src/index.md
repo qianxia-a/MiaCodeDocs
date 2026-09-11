@@ -6,7 +6,7 @@ titleTemplate: simai 谱面创作工具
 
 hero:
   name: MiaCode
-  text: 专注于 simai 谱面创作的编辑器
+  text: 开源的全平台多功能 maimai 谱面创作工具
   actions:
     - theme: brand
       text: 开始使用
