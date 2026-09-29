@@ -9,5 +9,3 @@ MiaCode 可以在谱面信息中设置或检测 BPM 与 offset。
 在谱面信息页面中点击 `自动检测 offset`，MiaCode 会自动将检测结果填入。
 
 <img class="interface-shot" src="/images/音频设置页面.png" alt="音频设置页面">
-
-支持的音频扩展名包括：`.mp3`、`.wav`、`.flac` 和 `.ogg`。
